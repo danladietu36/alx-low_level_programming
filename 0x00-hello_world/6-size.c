@@ -1,14 +1,20 @@
-#include <stsio.h>
+#include <stdio.h>
 /**
  * main - Entry
  * Return: Always 0
  */
 int main(void)
 {
-	printf("Size of a char: %i byte(s)\n", sizeof(char));
-	printf("Size of an int: %i byte(s)\n", sizeof(int));
-	printf("Size of a long int: %i byte(s)\n", sizeof(long int));
-	printf("Size of a long long int: %i byte(s)\n", sizeof(long long int);
-	prinf("Size of a float: %i byte(s)\n", sizeof(float));
+	char charType;
+	int intType;
+	long int longType;
+	long long int longType;
+	float floatType;
+
+	printf("Size of a char: %i bytes\n", sizeof(charType));
+	printf("Size of an int: %i bytes\n", sizeof(intType));
+	printf("Size of a long int: %i bytes\n", sizeof(long intType));
+	printf("Size of a long long int: %i bytes\n", sizeof(long long intType);
+	prinf("Size of a float: %i bytes\n", sizeof(floatType));
 	return (0);
 };
