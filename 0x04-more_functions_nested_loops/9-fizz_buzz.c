@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints fizzbuzz
@@ -14,9 +14,11 @@ int main(void)
 		printf(" ");
 		if (n % 3 == 0)
 			printf("Fizz");
-		if (n % 5 == O)
+		if (n % 5 == 0)
 			printf("Buzz");
 		if (n % 3 != 0 && n % 5 != 0)
-			print
+			printf("%d", n);
 	}
+	printf("\n");
+	return (0);
 }
