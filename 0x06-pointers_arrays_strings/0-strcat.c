@@ -2,10 +2,10 @@
 
 /**
  * _strcat - appends the src string to the dest string
- * @src: the string to append
- * @dest: The string destination
+ * @dest: copy to
+ * @src: copy from
  *
- * Return: dest
+ * Return: pointer to dest
  */
 char *_strcat(char *dest, char *src)
 {
