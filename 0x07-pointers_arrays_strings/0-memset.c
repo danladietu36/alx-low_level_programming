@@ -6,17 +6,15 @@
  * @s: array of string
  * @b: character constant
  * @n: size of memory area allocated to s
- * Return: Always 0
+ * Return: The memory area filled
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
-	i = 0;
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
-		i++;
 	}
 	return (s);
 }
