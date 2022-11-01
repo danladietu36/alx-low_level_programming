@@ -22,8 +22,6 @@ char *_strchr(char *s, char c)
 			s += b;
 			return (s);
 		}
-		else
-			return (NULL);
 	}
 	return ('\0');
 }
