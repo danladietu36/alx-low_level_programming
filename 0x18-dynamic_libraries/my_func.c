@@ -28,3 +28,46 @@ int sub(int a, int b)
 
 	return (res);
 }
+
+/*
+ * mul - multiply two integers
+ * @a: first integers
+ * @b: second integers
+ * return: Result of the multiplication
+ */
+int mul(int a, int b)
+{
+	int res;
+	res = a * b;
+	return (res);
+}
+
+/*
+ * div - division function
+ * @a: first integer
+ * @b: second integer
+ * return: the result of the divsion
+ */
+
+int div(int a, int b)
+{
+	int res;
+	res = a / b;
+
+	return (res);
+}
+
+/*
+ * mod - modulus function
+ * @a: first integer
+ * @b: second integer
+ * return: The remainder
+ */
+
+int mod(int a, int b)
+{
+	int res;
+	res = a % b;
+
+	return (res);
+}
