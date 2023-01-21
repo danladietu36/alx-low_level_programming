@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc -wall -wextra -werror -pedantic -c -fpic *.c
-gcc -shared -o liball.so *.o
-export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+gcc -fpic -shared -o lib.so *.c
+LDD_PRELOAD=/$PWD/lib.so .gm 98 8 10 24 75 9
