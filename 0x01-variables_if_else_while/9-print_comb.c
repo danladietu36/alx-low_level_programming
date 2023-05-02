@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int n;
+	int x;
 
-	for (n = 48; n < 58; n++)
+	for (x = 48; x < 58; x++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(x);
+		if (x != 57)
 		{
 			putchar(',');
 			putchar(' ');

@@ -1,20 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *main - Entry
- *Return: Always 0
+ * main - Entry point to progam to print alphabet A and a
+ * Return: Always 0
  */
 int main(void)
 {
-	char ch;
+	char alp;
+	for (alp = 'a'; alp <= 'z'; alp++)
+		putchar(alp);
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-
-	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
+	for (alp = 'A'; alp <= 'Z'; alp++)
+		putchar(alp);
 
 	putchar('\n');
-
 	return (0);
 }

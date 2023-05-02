@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - Alphabet printing with char
- * Return: Always 0
+ * main - Program to print char
+ * Return: On succes, 0
  */
 int main(void)
 {
-	char ch;
+	char alph;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		putchar(ch);
+		putchar(alph);
 	}
 	putchar('\n');
 	return (0);

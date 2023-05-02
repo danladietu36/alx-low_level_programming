@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - prints 0 -9 using putchar function
+ * main - Program to prints 0 -9 using putchar function
  * Return: Always 0
  */
 int main(void)
 {
-	int num;
+	int num1;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+	for (num1 = 0; num1 < 10; num1++)
+		putchar((num1 % 10) + '0');
 
 	putchar('\n');
 
