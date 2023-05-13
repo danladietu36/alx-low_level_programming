@@ -1,5 +1,5 @@
 #include "search_algos.h"
-#include <math.h>
+
 /**
  * interpolation_search - function to search for a value in sorted array
  * of integers using
@@ -35,10 +35,10 @@ int interpolation_search(int *array, size_t size, int value)
 	}
 	if (value == array[left])
 	{
-		printf("Value checked array[%lu] = [%d]\n", low, array[low]);
+		printf("Value checked array[%lu] = [%d]\n", left, array[left]);
 		return (left);
 	}
-	pos = left + (((double)(right - low) / (array[right] - array[left]))
+	pos = left + (((double)(right - left) / (array[right] - array[left]))
 		* (value - array[left]));
 	printf("Value checked array[%lu] is out of range\n", pos);
 	return (-1);
