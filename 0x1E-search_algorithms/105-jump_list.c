@@ -1,0 +1,44 @@
+#include "search_algos.h"
+
+/**
+ * jump_list - function to search for a value in a sorted singly
+ *             linked list of integers using jump search.
+ * @list: Pointer to the  head of the linked list to search.
+ * @size: Number of nodes in the list.
+ * @value: Value to search for.
+ *
+ * Return: If the value is not present or the head of the list is NULL, NULL.
+ *         Otherwise, a pointer to the first node where the value is located.
+ *
+ * Description: Prints a value every time it is compared in the list.
+ *              Uses the square root of the list size as the jump step.
+ */
+
+listint_t *jump_list(listint_t *list, size_t size, int value)
+{
+	size_t step, step_int;
+	listint_t *node, *jump;
+
+	step = 0;
+	step_int = sqrt(size);
+	/* for loop */
+	for (node = jump = list; jum->index + 1 < size && jump->n < value;)
+	{
+		node = jump;
+		for (step += step_int; jump->index < step; jump = jump->next)
+		{
+			if (jump->index + 1 == size)
+				break;
+		}
+		printf("Value checked at index [%ld] = [%d]\n", jump->index, jump->n);
+	}
+
+	printf("Value found between indexes [%ld] and [%ld]\n",
+			node->index, jump->index);
+
+	for (; node->index < jump->index && node->n < value; node = node->next)
+		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+
+	return (node->n == value ? node : NULL);
+}
