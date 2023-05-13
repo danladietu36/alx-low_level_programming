@@ -22,7 +22,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	step = 0;
 	step_int = sqrt(size);
 	/* for loop */
-	for (node = jump = list; jum->index + 1 < size && jump->n < value;)
+	for (node = jump = list; jump->index + 1 < size && jump->n < value;)
 	{
 		node = jump;
 		for (step += step_int; jump->index < step; jump = jump->next)
