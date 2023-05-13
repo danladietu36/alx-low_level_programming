@@ -1,4 +1,4 @@
-#include "search_algos."
+#include "search_algos.h"
 
 int binSearch(int *array, int value, size_t left, size_t right);
 size_t min_val(int x, int y);
@@ -66,7 +66,7 @@ int binSearch(int *array, int value, size_t left, size_t right)
 
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t low, high, limit = 1;
+	size_t left, right, limit = 1;
 
 	if (!array || size == 0)
 		return (-1);
@@ -79,7 +79,7 @@ int exponential_search(int *array, size_t size, int value)
 	}
 
 	left = limit / 2;
-	right = min_val(limit size - 1);
+	right = min_val(limit,  size - 1);
 	/* 'found' message generated even if array[high] < value */
 	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
 	return (binSearch(array, value, left, right));
